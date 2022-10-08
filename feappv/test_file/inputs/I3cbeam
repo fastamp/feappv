@@ -1,0 +1,87 @@
+feap * * Rotation/Rollup Problem (Ibrahimbegovic example)
+  0 0 0 3 6 2
+
+parameters
+  n=100
+
+noprint
+coor
+   1  1  0 0 0 
+ n+1 0 10 0 0 
+
+
+elem 
+   1 1 1 1   2
+   n 0 1 n n+1
+
+boun
+  1 0 1 1 1 1 1 1 
+
+param
+  f = 50
+  m = 200*acos(-1)
+
+forc
+ n+1 0 0 f 0 0 m 0
+
+
+mate,1
+  frame
+    elastic isot 1000
+    cross section 10 0.1 0.1 0 0.2 2 2
+    refer vector  0 0 1
+    finite
+    corotational
+
+
+end
+batch
+  print off
+  noprint
+  dt,,0.001
+  prop
+! plot defo
+end
+
+batch
+  tplot
+end
+disp n+1 1
+disp n+1 2
+disp n+1 3
+show
+
+batch
+! plot pers,1
+! plot hide
+end
+0
+30 30 20
+0 1 0
+
+batch
+  loop,,100
+   time
+   loop,,25
+     utang,,1
+   next
+!  plot wipe
+!  plot cont 2
+  next
+! plot wipe
+! plot defo
+  loop,,4
+   loop,,100
+    time
+    loop,,25
+      utang,,1
+    next
+!   plot clear
+!   plot cont 2
+   next
+!  plot defo
+  next
+end
+
+inter
+stop

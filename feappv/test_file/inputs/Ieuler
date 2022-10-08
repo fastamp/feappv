@@ -1,0 +1,50 @@
+feap * * Euler buckling using 3-d rod elements
+0,0,0,3,6,2
+
+parameters
+n=10
+
+noprint
+coor
+ 1  1  0 0 0 
+n+1 0 10 0 0 
+
+
+elem 
+  1 1 1 1  2
+  n 0 1 n n+1
+
+boun
+   1 0 1 1 1 1 0 0
+ n+1 0 0 1 1 0 0 0
+
+param
+  f = -1
+
+forc
+ n+1 0 f 0 0 0 0 0
+
+
+mate,1
+  frame
+  elastic isot 1000
+  cross section 1 1 1 0 2
+  refer vector  0 0 1
+  shear off
+
+
+end ! mesh
+
+batch
+  noprint
+  echo
+  loop,,2
+    tang,,1
+  next
+  geom
+  subs,,6
+end
+
+
+inter
+stop

@@ -1,0 +1,1951 @@
+ FEAP ** Taylor Impact test                                                     
+
+     Solution date: Sun Sep 05 08:38:16 2021
+
+              Release 5.1.1c   
+              18 June 2020     
+
+     Input Data Filename: Itay8                                                                                                                           
+
+     Number of Nodal Points  - - - - - - :     1875
+     Number of Elements  - - - - - - - - :     1152
+
+     Spatial Dimension of Mesh - - - - - :        3
+     Degrees-of-Freedom/Node (Maximum) - :        3
+     Equations/Element       (Maximum) - :        0
+     Number Element Nodes    (Maximum) - :        8
+
+     Number of Material Sets - - - - - - :        1
+     Number Parameters/Set   (Program) - :      300
+     Number Parameters/Set   (Users  ) - :      150
+
+ FEAP ** Taylor Impact test                                                    
+
+   M a t e r i a l    P r o p e r t i e s
+
+     Material Number   1: Element Type: solid:                           
+     Degree of Freedom Assignments    Local    Global
+                                     Number    Number
+                                        1         1
+                                        2         2
+                                        3         3
+
+     T h r e e   D i m e n s i o n a l   S o l i d   E l e m e n t
+
+     M e c h a n i c a l   P r o p e r t i e s
+
+          3-Dimensional Analysis
+
+          Modulus E        1.10000E+11
+          Poisson ratio    0.30000
+
+          Density          8.97000E+03
+
+          1-Gravity Load   0.00000E+00
+          2-Gravity Load   0.00000E+00
+          3-Gravity Load   0.00000E+00
+
+
+     C o n s t i t u t i v e   S t a r t   S t a t e
+
+          State at last time step
+          Formulation : Finite deformation.
+          Element type: Mixed B-Bar.
+          Augmenting   : On
+          Mass type   : Consistent.
+
+  C o n s t a n t    V a l u e s
+
+     Constant j  =  0.40000000E+01
+     Constant n  =  0.40000000E+01
+     Constant m  =  0.24000000E+02
+     Constant a  =  0.32000000E-02
+     Constant b  =  0.16000000E-02
+     Constant c  =  0.12800000E-02
+     Constant d  =  0.22627417E-02
+     Constant h  =  0.32400000E-01
+     Constant nn =  0.18750000E+04
+
+ FEAP ** Taylor Impact test                                                    
+
+
+     E l e m e n t   S i z e   V a l u e s
+          h-minimum =  3.2985E-04
+          h-maximum =  1.5309E-03
+
+     Tie all nodes with common coordinates
+
+
+      Gap Tolerance =  2.3094E-05
+
+
+
+       T i e  - - -  N o d a l   C o o r d i n a t e s
+
+          The following nodes have been deleted:
+
+
+        350 nodes merged by the tie command
+
+
+ FEAP ** Taylor Impact test                                                    
+
+     Solution Commands       Variable 1  Variable 2  Variable 3
+       echo      on          0.0000E+00  0.0000E+00  0.0000E+00
+       noprint               0.0000E+00  0.0000E+00  0.0000E+00
+       dt                    8.0000E-08  0.0000E+00  0.0000E+00
+       transient newmark     0.0000E+00  0.0000E+00  0.0000E+00
+       init      rate        0.0000E+00  0.0000E+00  0.0000E+00
+ *Command   1 * echo on             v:   0.00       0.00       0.00    
+                                                           t=     0.04     0.00
+ *Command   2 * nopr                v:   0.00       0.00       0.00    
+                                                           t=     0.04     0.00
+
+ Newmark Parameters: Beta =    0.2500 Gamma =    0.5000
+
+ *End of Solution Execution*                               t=     0.04     0.00
+
+ FEAP ** Taylor Impact test                                                    
+
+     Solution Commands       Variable 1  Variable 2  Variable 3
+       plot      defo        0.0000E+00  0.0000E+00  0.0000E+00
+       plot      pers        1.0000E+00  0.0000E+00  0.0000E+00
+       plot      hide        0.0000E+00  0.0000E+00  0.0000E+00
+       plot      cylinder    0.0000E+00  0.0000E+00  0.0000E+00
+       opti                  0.0000E+00  0.0000E+00  0.0000E+00
+       loop      time        1.0000E+02  0.0000E+00  0.0000E+00
+       time                  0.0000E+00  0.0000E+00  0.0000E+00
+       loop      tan         1.0000E+01  0.0000E+00  0.0000E+00
+       tang                  1.0000E+00  0.0000E+00  0.0000E+00
+       next      tan         0.0000E+00  0.0000E+00  0.0000E+00
+       plot      wipe        0.0000E+00  0.0000E+00  0.0000E+00
+       plot      pers        0.0000E+00  0.0000E+00  0.0000E+00
+       plot      hide        0.0000E+00  0.0000E+00  0.0000E+00
+       plot      cent        2.5000E-01  5.0000E-01  0.0000E+00
+       plot      cont        1.0000E+00  0.0000E+00  0.0000E+00
+       plot      cent        7.5000E-01  5.0000E-01  0.0000E+00
+       plot      cont        3.0000E+00  0.0000E+00  0.0000E+00
+       next      time        0.0000E+00  0.0000E+00  0.0000E+00
+       save                  0.0000E+00  0.0000E+00  0.0000E+00
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** WARNING: no match on a plot,cyli request.
+
+   Computing solution at time  8.0000E-08: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t=     0.21     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:      1 Iteration:     0
+   End Triangular Decomposition                            t= 86399.41     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  1.6000E-07: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.48     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:      2 Iteration:     0
+   End Triangular Decomposition                            t= 86399.67     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  2.4000E-07: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.73     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:      3 Iteration:     0
+   End Triangular Decomposition                            t= 86399.95     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  3.2000E-07: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.00     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:      4 Iteration:     0
+   End Triangular Decomposition                            t= 86400.20     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.0000E-07: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.27     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:      5 Iteration:     0
+   End Triangular Decomposition                            t= 86399.48     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.8000E-07: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.53     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:      6 Iteration:     0
+   End Triangular Decomposition                            t= 86399.74     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  5.6000E-07: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.80     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:      7 Iteration:     0
+   End Triangular Decomposition                            t= 86400.02     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  6.4000E-07: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.07     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:      8 Iteration:     0
+   End Triangular Decomposition                            t= 86400.27     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  7.2000E-07: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.34     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:      9 Iteration:     0
+   End Triangular Decomposition                            t= 86399.53     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  8.0000E-07: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.59     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     10 Iteration:     0
+   End Triangular Decomposition                            t= 86399.79     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  8.8000E-07: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.85     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     11 Iteration:     0
+   End Triangular Decomposition                            t= 86400.05     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  9.6000E-07: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.12     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     12 Iteration:     0
+   End Triangular Decomposition                            t= 86400.32     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  1.0400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.38     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     13 Iteration:     0
+   End Triangular Decomposition                            t= 86399.59     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  1.1200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.64     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     14 Iteration:     0
+   End Triangular Decomposition                            t= 86399.85     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  1.2000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.91     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     15 Iteration:     0
+   End Triangular Decomposition                            t= 86400.11     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  1.2800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.17     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     16 Iteration:     0
+   End Triangular Decomposition                            t= 86400.38     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  1.3600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.43     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     17 Iteration:     0
+   End Triangular Decomposition                            t= 86399.63     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  1.4400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.70     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     18 Iteration:     0
+   End Triangular Decomposition                            t= 86399.91     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  1.5200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.95     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     19 Iteration:     0
+   End Triangular Decomposition                            t= 86400.16     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  1.6000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.21     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     20 Iteration:     0
+   End Triangular Decomposition                            t= 86399.41     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  1.6800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.48     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     21 Iteration:     0
+   End Triangular Decomposition                            t= 86399.67     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  1.7600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.73     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     22 Iteration:     0
+   End Triangular Decomposition                            t= 86399.93     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  1.8400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.99     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     23 Iteration:     0
+   End Triangular Decomposition                            t= 86400.20     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  1.9200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.25     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     24 Iteration:     0
+   End Triangular Decomposition                            t= 86399.45     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  2.0000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.52     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     25 Iteration:     0
+   End Triangular Decomposition                            t= 86399.71     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  2.0800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.77     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     26 Iteration:     0
+   End Triangular Decomposition                            t= 86399.98     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  2.1600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.03     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     27 Iteration:     0
+   End Triangular Decomposition                            t= 86400.23     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  2.2400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.29     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     28 Iteration:     0
+   End Triangular Decomposition                            t= 86399.49     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  2.3200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.55     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     29 Iteration:     0
+   End Triangular Decomposition                            t= 86399.75     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  2.4000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.81     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     30 Iteration:     0
+   End Triangular Decomposition                            t= 86400.02     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  2.4800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.07     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     31 Iteration:     0
+   End Triangular Decomposition                            t= 86400.27     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  2.5600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.34     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     32 Iteration:     0
+   End Triangular Decomposition                            t= 86399.53     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  2.6400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.59     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     33 Iteration:     0
+   End Triangular Decomposition                            t= 86399.79     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  2.7200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.84     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     34 Iteration:     0
+   End Triangular Decomposition                            t= 86400.04     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  2.8000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.10     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     35 Iteration:     0
+   End Triangular Decomposition                            t= 86400.30     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  2.8800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.36     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     36 Iteration:     0
+   End Triangular Decomposition                            t= 86399.57     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  2.9600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.62     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     37 Iteration:     0
+   End Triangular Decomposition                            t= 86399.82     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  3.0400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.88     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     38 Iteration:     0
+   End Triangular Decomposition                            t= 86400.09     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  3.1200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.14     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     39 Iteration:     0
+   End Triangular Decomposition                            t= 86400.34     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  3.2000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.41     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     40 Iteration:     0
+   End Triangular Decomposition                            t= 86399.60     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  3.2800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.66     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     41 Iteration:     0
+   End Triangular Decomposition                            t= 86399.85     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  3.3600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.91     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     42 Iteration:     0
+   End Triangular Decomposition                            t= 86400.11     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  3.4400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.17     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     43 Iteration:     0
+   End Triangular Decomposition                            t= 86400.38     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  3.5200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.43     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     44 Iteration:     0
+   End Triangular Decomposition                            t= 86399.63     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  3.6000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.70     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     45 Iteration:     0
+   End Triangular Decomposition                            t= 86399.89     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  3.6800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.95     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     46 Iteration:     0
+   End Triangular Decomposition                            t= 86400.16     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  3.7600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.21     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     47 Iteration:     0
+   End Triangular Decomposition                            t= 86399.41     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  3.8400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.48     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     48 Iteration:     0
+   End Triangular Decomposition                            t= 86399.67     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  3.9200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.73     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     49 Iteration:     0
+   End Triangular Decomposition                            t= 86399.93     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.0000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.99     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     50 Iteration:     0
+   End Triangular Decomposition                            t= 86400.20     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.0800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.24     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     51 Iteration:     0
+   End Triangular Decomposition                            t= 86399.45     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.1600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.50     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     52 Iteration:     0
+   End Triangular Decomposition                            t= 86399.71     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.2400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.77     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     53 Iteration:     0
+   End Triangular Decomposition                            t= 86399.98     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.3200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.03     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     54 Iteration:     0
+   End Triangular Decomposition                            t= 86400.23     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.4000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.28     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     55 Iteration:     0
+   End Triangular Decomposition                            t= 86399.49     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.4800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.54     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     56 Iteration:     0
+   End Triangular Decomposition                            t= 86399.75     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.5600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.80     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     57 Iteration:     0
+   End Triangular Decomposition                            t= 86400.02     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.6400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.06     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     58 Iteration:     0
+   End Triangular Decomposition                            t= 86400.27     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.7200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.32     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     59 Iteration:     0
+   End Triangular Decomposition                            t= 86399.53     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.8000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.59     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     60 Iteration:     0
+   End Triangular Decomposition                            t= 86399.78     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.8800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.84     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     61 Iteration:     0
+   End Triangular Decomposition                            t= 86400.04     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  4.9600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.10     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     62 Iteration:     0
+   End Triangular Decomposition                            t= 86400.30     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  5.0400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.36     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     63 Iteration:     0
+   End Triangular Decomposition                            t= 86399.56     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  5.1200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.61     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     64 Iteration:     0
+   End Triangular Decomposition                            t= 86399.82     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  5.2000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.88     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     65 Iteration:     0
+   End Triangular Decomposition                            t= 86400.09     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  5.2800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.13     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     66 Iteration:     0
+   End Triangular Decomposition                            t= 86400.34     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  5.3600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.39     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     67 Iteration:     0
+   End Triangular Decomposition                            t= 86399.59     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  5.4400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.66     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     68 Iteration:     0
+   End Triangular Decomposition                            t= 86399.85     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  5.5200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.91     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     69 Iteration:     0
+   End Triangular Decomposition                            t= 86400.11     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  5.6000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.17     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     70 Iteration:     0
+   End Triangular Decomposition                            t= 86400.38     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  5.6800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.43     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     71 Iteration:     0
+   End Triangular Decomposition                            t= 86399.63     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  5.7600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.70     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     72 Iteration:     0
+   End Triangular Decomposition                            t= 86399.89     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  5.8400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.95     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     73 Iteration:     0
+   End Triangular Decomposition                            t= 86400.16     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  5.9200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.20     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     74 Iteration:     0
+   End Triangular Decomposition                            t= 86399.41     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  6.0000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.46     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     75 Iteration:     0
+   End Triangular Decomposition                            t= 86399.67     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  6.0800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.73     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     76 Iteration:     0
+   End Triangular Decomposition                            t= 86399.93     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  6.1600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.98     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     77 Iteration:     0
+   End Triangular Decomposition                            t= 86400.18     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  6.2400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.24     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     78 Iteration:     0
+   End Triangular Decomposition                            t= 86399.45     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  6.3200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.50     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     79 Iteration:     0
+   End Triangular Decomposition                            t= 86399.70     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  6.4000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.77     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     80 Iteration:     0
+   End Triangular Decomposition                            t= 86399.96     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  6.4800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.02     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     81 Iteration:     0
+   End Triangular Decomposition                            t= 86400.23     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  6.5600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.28     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     82 Iteration:     0
+   End Triangular Decomposition                            t= 86399.48     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  6.6400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.53     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     83 Iteration:     0
+   End Triangular Decomposition                            t= 86399.73     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  6.7200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.80     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     84 Iteration:     0
+   End Triangular Decomposition                            t= 86400.00     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  6.8000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.05     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     85 Iteration:     0
+   End Triangular Decomposition                            t= 86400.25     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  6.8800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.31     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     86 Iteration:     0
+   End Triangular Decomposition                            t= 86399.52     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  6.9600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.57     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     87 Iteration:     0
+   End Triangular Decomposition                            t= 86399.77     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  7.0400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.84     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     88 Iteration:     0
+   End Triangular Decomposition                            t= 86400.03     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  7.1200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.09     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     89 Iteration:     0
+   End Triangular Decomposition                            t= 86400.29     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  7.2000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.34     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     90 Iteration:     0
+   End Triangular Decomposition                            t= 86399.55     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  7.2800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.60     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     91 Iteration:     0
+   End Triangular Decomposition                            t= 86399.81     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  7.3600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.86     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     92 Iteration:     0
+   End Triangular Decomposition                            t= 86400.07     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  7.4400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.12     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     93 Iteration:     0
+   End Triangular Decomposition                            t= 86400.34     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  7.5200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.38     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     94 Iteration:     0
+   End Triangular Decomposition                            t= 86399.59     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  7.6000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.64     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     95 Iteration:     0
+   End Triangular Decomposition                            t= 86399.84     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  7.6800E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.91     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     96 Iteration:     0
+   End Triangular Decomposition                            t= 86400.10     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  7.7600E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86400.16     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     97 Iteration:     0
+   End Triangular Decomposition                            t= 86400.36     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  7.8400E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.42     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     98 Iteration:     0
+   End Triangular Decomposition                            t= 86399.62     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  7.9200E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.67     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:     99 Iteration:     0
+   End Triangular Decomposition                            t= 86399.88     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+
+   Computing solution at time  8.0000E-06: Total proportional load  1.0000E+00
+   Residual norm =     0.0000000E+00    1.0000000E+00      t= 86399.93     0.00
+ *WARNING* reduced diagonal is zero in 4059 equations.
+ Step:    100 Iteration:     0
+   End Triangular Decomposition                            t= 86400.14     0.00
+ *WARNING* Zero right-hand-side vector
+ Body occupies the space with:
+                 X             Y             Z
+   Minimum    0.00000E+00   0.00000E+00   0.00000E+00
+   Maximum    3.20000E-03   3.20000E-03   3.24000E-02
+          X= 1.00E-01, Y= 8.00E-02, Z= 1.00E-01
+
+   Components of vertical vector   (X,Y,Z).
+          X= 0.00E+00, Y= 0.00E+00, Z= 1.00E+00
+
+ ** ERROR ** No plot - all zero values
+ ** ERROR ** No plot - all zero values
+   Save to file : Rtay8                                                                                                                           
+   R e s t a r t    O u t p u t   D a t a
+          Time step number  =     100
+          Time for restart  = 8.00000E-06
+          Time increment    = 8.00000E-08
+          Displacements output
+          Proportional load = 1.00000E+00
+          Arc-length   load = 1.00000E+00
+          Transient states output (noi = 1)
+          Force vector output
+          History data output
+ *End of Solution Execution*                               t= 86400.20     0.00

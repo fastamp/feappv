@@ -1,0 +1,29 @@
+
+  --------------------------------- START OF FEAP LOG ----------------------------------
+
+  INPUT FILE NAME: Iblk2d                                                                                                                          
+
+  MESH INPUT RECORDS
+  ------------------
+     parameter                      
+     material        1              
+     parameter                      
+     block                          
+     ebou                           
+     parameter                      
+     csurf                          
+     end                            
+
+  --------------------------------- END OF MESH INPUTS ---------------------------------
+
+
+  SOLUTION SUMMARY
+  ----------------
+
+  Load    Total     Solution      Time     Residual Norm        Energy Norm     CPU Time
+  Step  Tang+Forms      Time      Incr.  Initial     Final   Initial     Final (Seconds)
+  --------------------------------------------------------------------------------------
+     0     2    0  0.000E+00  0.00E+00  4.77E+00  4.65E-13  5.60E-01  2.19E-28      0.32
+
+ Total     2    0
+  ---------------------------------- END OF FEAP LOG -----------------------------------

@@ -1,0 +1,62 @@
+ feap * * Rotation/Rollup Problem (Ibrahimbegovic example)                      
+
+     Solution date: Sun Sep 05 08:37:51 2021
+
+              Release 5.1.1c   
+              18 June 2020     
+
+     Input Data Filename: I3dbeam                                                                                                                         
+
+     Number of Nodal Points  - - - - - - :      101
+     Number of Elements  - - - - - - - - :      100
+
+     Spatial Dimension of Mesh - - - - - :        3
+     Degrees-of-Freedom/Node (Maximum) - :        6
+     Equations/Element       (Maximum) - :        0
+     Number Element Nodes    (Maximum) - :        2
+
+     Number of Material Sets - - - - - - :        1
+     Number Parameters/Set   (Program) - :      300
+     Number Parameters/Set   (Users  ) - :      150
+
+  C o n s t a n t    V a l u e s
+
+     Constant n  =  0.10000000E+03
+
+     Material Number   1: Element Type: frame:                           
+     T h r e e   D i m e n s i o n a l   F r a m e
+
+     M e c h a n i c a l   P r o p e r t i e s
+
+          Truss & Frame Analysis
+
+          Modulus E        1.00000E+03
+          Poisson ratio    0.00000
+
+          Density          0.00000E+00
+
+          1-Gravity Load   0.00000E+00
+          2-Gravity Load   0.00000E+00
+          3-Gravity Load   0.00000E+00
+
+
+     C r o s s   S e c t i o n   P a r a m e t e r s
+
+          Area          1.00000E+01
+          I_xx          1.00000E-01
+          I_yy          1.00000E-01
+          I_xy          0.00000E+00
+          J_zz          2.00000E-01
+          Kappa_x       2.00000E+00
+          Kappa_y       2.00000E+00
+
+          Formulation : Finite deformation.
+                        Includes shear deformation
+
+     R e f e r e n c e    V e c t o r
+
+          v-1 =  0.00000E+00
+          v-2 =  0.00000E+00
+          v-3 =  1.00000E+00
+
+          Material density is zero.

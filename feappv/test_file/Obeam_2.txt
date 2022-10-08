@@ -1,0 +1,208 @@
+ FEAP * * Example 3. Circular Disk: Block inputs                                
+
+     Solution date: Sun May 22 08:28:13 2022
+
+              Release 5.1.1c   
+              18 June 2020     
+
+     Input Data Filename: Ibeam_2.txt                                                                                                                     
+
+     Number of Nodal Points  - - - - - - :        6
+     Number of Elements  - - - - - - - - :        2
+
+     Spatial Dimension of Mesh - - - - - :        2
+     Degrees-of-Freedom/Node (Maximum) - :        2
+     Equations/Element       (Maximum) - :        0
+     Number Element Nodes    (Maximum) - :        4
+
+     Number of Material Sets - - - - - - :        1
+     Number Parameters/Set   (Program) - :      300
+     Number Parameters/Set   (Users  ) - :      150
+
+ FEAP * * Example 3. Circular Disk: Block inputs                               
+
+     Nodal Coordinates   
+
+      node    1 Coord    2 Coord
+         1  0.000E+00  0.000E+00
+         2  7.000E+00  0.000E+00
+         3  1.000E+01  0.000E+00
+         4  0.000E+00  2.000E+00
+         5  3.000E+00  2.000E+00
+         6  1.000E+01  2.000E+00
+
+ FEAP * * Example 3. Circular Disk: Block inputs                               
+
+     E l e m e n t s
+
+   Elmt Mat Reg  Type  1 Node  2 Node  3 Node  4 Node
+      1   1   0 Quadr       2       5       4       1
+      2   1   0 Quadr       3       6       5       2
+
+ FEAP * * Example 3. Circular Disk: Block inputs                               
+
+  N o d a l   B. C.
+
+      Node 1-b.c. 2-b.c.
+         1      1      1
+         4      1      0
+
+ FEAP * * Example 3. Circular Disk: Block inputs                               
+
+     Nodal Forces        
+
+      node    1 Force    2 Force
+         3  5.000E-01  0.000E+00
+         6 -5.000E-01  0.000E+00
+
+ FEAP * * Example 3. Circular Disk: Block inputs                               
+
+   M a t e r i a l    P r o p e r t i e s
+
+     Material Number   1: Element Type: SOLId:                           
+     Degree of Freedom Assignments    Local    Global
+                                     Number    Number
+                                        1         1
+                                        2         2
+
+     T w o   D i m e n s i o n a l   S o l i d   E l e m e n t
+
+     M e c h a n i c a l   P r o p e r t i e s
+
+          Plane Stress  Analysis
+
+          Modulus E        7.50000E+01
+          Poisson ratio    0.00000
+
+          Thickness        1.00000E+00
+          Quadrature: Arrays  2
+          Quadrature: Output  2
+
+          Thickness        1.00000E+00
+          Density          0.00000E+00
+
+          1-Gravity Load   0.00000E+00
+          2-Gravity Load   0.00000E+00
+          3-Gravity Load   0.00000E+00
+
+          Formulation : Small deformation.
+          Element type: Enhanced Strain.
+          Augmenting   : On
+
+          Material density is zero.
+
+     E l e m e n t   S i z e   V a l u e s
+          h-minimum =  2.0000E+00
+          h-maximum =  7.2801E+00
+
+     E q u a t i o n / P r o b l e m   S u m m a r y:
+
+          Space dimension (ndm) =         2   Number dof (ndf) =       2
+          Number of equations   =         9   Number nodes     =       6
+          Average col. height   =         5   Number elements  =       2
+          Number profile terms  =        36   Number materials =       1
+
+
+ FEAP * * Example 3. Circular Disk: Block inputs                               
+
+     Solution Commands       Variable 1  Variable 2  Variable 3
+       TANG                  1.0000E+00  0.0000E+00  0.0000E+00
+       DISPlacem ALL         0.0000E+00  0.0000E+00  0.0000E+00
+       STRESs    ALL         0.0000E+00  0.0000E+00  0.0000E+00
+       REACtion  ALL         0.0000E+00  0.0000E+00  0.0000E+00
+       PLOT      MESH        0.0000E+00  0.0000E+00  0.0000E+00
+       PLOT      CONT        2.0000E+00  0.0000E+00  0.0000E+00
+ *Command   1 * tang                v:   1.00       0.00       0.00    
+                                                           t=     0.00     0.00
+   Residual norm =     7.0710678E-01    1.0000000E+00      t=     0.00     0.00
+ Condition check: D-max 0.1258E+03; D-min 0.2203E+00; Ratio 0.5709E+03
+ Maximum no. diagonal digits lost:  3
+   End Triangular Decomposition                            t=     0.00     0.00
+   Energy convergence test
+    Maximum   =    1.067455183884797E-01 Current   =    1.067455183884797E-01
+    Relative  =    1.000000000000000E+00 Tolerance =    1.000000000000000E-16
+ *Command   2 * disp ALL            v:   0.00       0.00       0.00    
+                                                           t=     0.00     0.00
+
+ FEAP * * Example 3. Circular Disk: Block inputs                               
+
+  N o d a l   D i s p l a c e m e n t s     Time       0.00000E+00
+                                            Prop. Ld.  1.00000E+00
+
+   Node     1 Coord     2 Coord     1 Displ     2 Displ
+      1  0.0000E+00  0.0000E+00  0.0000E+00  0.0000E+00
+      2  7.0000E+00  0.0000E+00  4.5268E-02  3.0913E-01
+      3  1.0000E+01  0.0000E+00  1.0675E-01  6.1255E-01
+      4  0.0000E+00  2.0000E+00  0.0000E+00  7.8824E-02
+      5  3.0000E+00  2.0000E+00 -6.1477E-02  9.5641E-02
+      6  1.0000E+01  2.0000E+00 -1.0675E-01  5.3373E-01
+ *Command   3 * stre ALL            v:   0.00       0.00       0.00    
+                                                           t=     0.00     0.00
+ FEAP * * Example 3. Circular Disk: Block inputs                                 
+
+     Element Stresses
+
+     Elmt Mat    1-coord    2-coord   1-stress   2-stress      Angle
+               11-stress  22-stress  33-stress  12-stress               11-strain  22-strain  33-strain  12-strain
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+        1   1      4.854      0.423  2.816E+01  0.000E+00  0.000E+00
+               1.697E-01 -1.875E-01  0.000E+00  2.679E-01
+               2.262E-03 -2.500E-03  0.000E+00  7.143E-03
+
+        1   1      3.033      1.577  6.781E+01  0.000E+00  0.000E+00
+              -9.305E-01 -2.518E-01  0.000E+00  3.322E-01
+              -1.241E-02 -3.357E-03  0.000E+00  8.858E-03
+
+        1   1      0.813      1.577 -8.910E+01  0.000E+00  0.000E+00
+              -5.877E-01  9.101E-02  0.000E+00 -1.062E-02
+              -7.836E-03  1.213E-03  0.000E+00 -2.831E-04
+
+        1   1      1.301      0.423  8.368E+00  0.000E+00  0.000E+00
+               3.838E-01  2.669E-02  0.000E+00  5.370E-02
+               5.118E-03  3.559E-04  0.000E+00  1.432E-03
+
+        2   1      9.187      0.423  8.959E-01  0.000E+00  0.000E+00
+               5.877E-01 -9.101E-02  0.000E+00  1.062E-02
+               7.836E-03 -1.213E-03  0.000E+00  2.831E-04
+
+        2   1      8.699      1.577 -8.163E+01  0.000E+00  0.000E+00
+              -3.838E-01 -2.669E-02  0.000E+00 -5.370E-02
+              -5.118E-03 -3.559E-04  0.000E+00 -1.432E-03
+
+        2   1      5.146      1.577 -6.184E+01  0.000E+00  0.000E+00
+              -1.697E-01  1.875E-01  0.000E+00 -2.679E-01
+              -2.262E-03  2.500E-03  0.000E+00 -7.143E-03
+
+        2   1      6.967      0.423 -2.219E+01  0.000E+00  0.000E+00
+               9.305E-01  2.518E-01  0.000E+00 -3.322E-01
+               1.241E-02  3.357E-03  0.000E+00 -8.858E-03
+
+ *Command   4 * reac ALL            v:   0.00       0.00       0.00    
+                                                           t=     0.00     0.00
+
+ FEAP * * Example 3. Circular Disk: Block inputs                               
+
+  N o d a l    R e a c t i o n s
+
+   Node       1 dof       2 dof
+      1 -5.0000E-01 -2.4133E-14
+      2  7.7716E-16 -3.9413E-15
+      3  5.0000E-01  1.4433E-14
+      4  5.0000E-01  3.0288E-15
+      5  1.7208E-15  4.5519E-15
+      6 -5.0000E-01  6.0230E-15
+
+ Pr.Sum  2.2204E-16 -3.8164E-17
+   Sum   2.2204E-16 -3.8164E-17
+  |Sum|  2.0000E+00  5.6111E-14
+   Energy: Displacements * Reactions =     1.0674552E-01
+
+ *Command   5 * plot MESH           v:   0.00       0.00       0.00    
+                                                           t=     0.00     0.00
+ *Command   6 * plot CONT           v:   2.00       0.00       0.00    
+                                                           t=     0.11     0.00
+    Minimum is   0.00E+00 Maximum is   6.13E-01
+   ------ Contour Values for Plot ------
+      0.875074E-01   0.175015E+00   0.262522E+00   0.350030E+00   0.437537E+00
+      0.525044E+00
+ *End of Solution Execution*                               t=     0.14     0.00

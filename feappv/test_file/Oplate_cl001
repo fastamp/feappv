@@ -1,0 +1,362 @@
+
+  --> Problem   1: Output in file: Oplate_cl001                                                                                                                    
+ feap * * Simply supported square plate                                         
+
+     Solution date: Thu Jun 09 21:08:15 2022
+
+              Release 5.1.1c   
+              18 June 2020     
+
+     Input Data Filename: Iplate_cl                                                                                                                       
+
+     Number of Nodal Points  - - - - - - :       81
+     Number of Elements  - - - - - - - - :       64
+
+     Spatial Dimension of Mesh - - - - - :        2
+     Degrees-of-Freedom/Node (Maximum) - :        3
+     Equations/Element       (Maximum) - :        0
+     Number Element Nodes    (Maximum) - :        4
+
+     Number of Material Sets - - - - - - :        1
+     Number Parameters/Set   (Program) - :      300
+     Number Parameters/Set   (Users  ) - :      150
+
+  C o n s t a n t    V a l u e s
+
+     Constant h  =  0.10000000E-01
+     Constant e  =  0.10920000E+08
+     Constant nu =  0.30000000E+00
+     Constant q  =  0.10000000E+01
+     Constant d  =  0.10000000E+01
+
+ feap * * Simply supported square plate                                        
+
+   M a t e r i a l    P r o p e r t i e s
+
+     Material Number   1: Element Type: plate:                           
+     Degree of Freedom Assignments    Local    Global
+                                     Number    Number
+                                        1         1
+                                        2         2
+                                        3         3
+
+     E l a s t i c   P l a t e   E l e m e n t
+
+     M e c h a n i c a l   P r o p e r t i e s
+
+          Plate & Shell Analysis
+
+          Modulus E        1.09200E+07
+          Poisson ratio    0.30000
+
+          Thickness        1.00000E-02
+          Loading - q      1.00000E+00
+          Thickness        1.00000E-02
+          Loading - q      1.00000E+00
+          Density          0.00000E+00
+
+          1-Gravity Load   0.00000E+00
+          2-Gravity Load   0.00000E+00
+          3-Gravity Load   0.00000E+00
+
+          Formulation : Small deformation.
+          Plate/Shell : Kappa     8.33333E-01
+
+          Material density is zero.
+
+ feap * * Simply supported square plate                                        
+
+   N o d e   G e n e r a t i o n s
+
+          Number of xi_1-increments     8
+          Number of xi_2-increments     8
+          Number of xi_3-increments     1
+          First node number             1
+          First element number          1
+          Element material number       1
+          Node line increment           0
+          Block type (0-10)             0
+
+
+     Block coordinates specified as: cartesian      
+
+     node     1 coord     2 coord
+        1   0.000E+00   0.000E+00
+        2   5.000E+00   0.000E+00
+        3   5.000E+00   5.000E+00
+        4   0.000E+00   5.000E+00
+
+ feap * * Simply supported square plate                                        
+
+
+  N o d a l   C o o r d i n a t e s
+
+      Node      1 coord      2 coord
+         1   0.0000E+00   0.0000E+00
+         2   6.2500E-01   0.0000E+00
+         3   1.2500E+00   0.0000E+00
+         4   1.8750E+00   0.0000E+00
+         5   2.5000E+00   0.0000E+00
+         6   3.1250E+00   0.0000E+00
+         7   3.7500E+00   0.0000E+00
+         8   4.3750E+00   0.0000E+00
+         9   5.0000E+00   0.0000E+00
+        10   0.0000E+00   6.2500E-01
+        11   6.2500E-01   6.2500E-01
+        12   1.2500E+00   6.2500E-01
+        13   1.8750E+00   6.2500E-01
+        14   2.5000E+00   6.2500E-01
+        15   3.1250E+00   6.2500E-01
+        16   3.7500E+00   6.2500E-01
+        17   4.3750E+00   6.2500E-01
+        18   5.0000E+00   6.2500E-01
+        19   0.0000E+00   1.2500E+00
+        20   6.2500E-01   1.2500E+00
+        21   1.2500E+00   1.2500E+00
+        22   1.8750E+00   1.2500E+00
+        23   2.5000E+00   1.2500E+00
+        24   3.1250E+00   1.2500E+00
+        25   3.7500E+00   1.2500E+00
+        26   4.3750E+00   1.2500E+00
+        27   5.0000E+00   1.2500E+00
+        28   0.0000E+00   1.8750E+00
+        29   6.2500E-01   1.8750E+00
+        30   1.2500E+00   1.8750E+00
+        31   1.8750E+00   1.8750E+00
+        32   2.5000E+00   1.8750E+00
+        33   3.1250E+00   1.8750E+00
+        34   3.7500E+00   1.8750E+00
+        35   4.3750E+00   1.8750E+00
+        36   5.0000E+00   1.8750E+00
+        37   0.0000E+00   2.5000E+00
+        38   6.2500E-01   2.5000E+00
+        39   1.2500E+00   2.5000E+00
+        40   1.8750E+00   2.5000E+00
+        41   2.5000E+00   2.5000E+00
+        42   3.1250E+00   2.5000E+00
+        43   3.7500E+00   2.5000E+00
+        44   4.3750E+00   2.5000E+00
+        45   5.0000E+00   2.5000E+00
+        46   0.0000E+00   3.1250E+00
+        47   6.2500E-01   3.1250E+00
+        48   1.2500E+00   3.1250E+00
+        49   1.8750E+00   3.1250E+00
+        50   2.5000E+00   3.1250E+00
+
+ feap * * Simply supported square plate                                        
+
+
+  N o d a l   C o o r d i n a t e s
+
+      Node      1 coord      2 coord
+        51   3.1250E+00   3.1250E+00
+        52   3.7500E+00   3.1250E+00
+        53   4.3750E+00   3.1250E+00
+        54   5.0000E+00   3.1250E+00
+        55   0.0000E+00   3.7500E+00
+        56   6.2500E-01   3.7500E+00
+        57   1.2500E+00   3.7500E+00
+        58   1.8750E+00   3.7500E+00
+        59   2.5000E+00   3.7500E+00
+        60   3.1250E+00   3.7500E+00
+        61   3.7500E+00   3.7500E+00
+        62   4.3750E+00   3.7500E+00
+        63   5.0000E+00   3.7500E+00
+        64   0.0000E+00   4.3750E+00
+        65   6.2500E-01   4.3750E+00
+        66   1.2500E+00   4.3750E+00
+        67   1.8750E+00   4.3750E+00
+        68   2.5000E+00   4.3750E+00
+        69   3.1250E+00   4.3750E+00
+        70   3.7500E+00   4.3750E+00
+        71   4.3750E+00   4.3750E+00
+        72   5.0000E+00   4.3750E+00
+        73   0.0000E+00   5.0000E+00
+        74   6.2500E-01   5.0000E+00
+        75   1.2500E+00   5.0000E+00
+        76   1.8750E+00   5.0000E+00
+        77   2.5000E+00   5.0000E+00
+        78   3.1250E+00   5.0000E+00
+        79   3.7500E+00   5.0000E+00
+        80   4.3750E+00   5.0000E+00
+        81   5.0000E+00   5.0000E+00
+
+ feap * * Simply supported square plate                                        
+
+   E l e m e n t   C o n n e c t i o n s
+
+   Elmt Mat Reg  Type  1-node  2-node  3-node  4-node
+      1   1   0 Quadr       1       2      11      10
+      2   1   0 Quadr       2       3      12      11
+      3   1   0 Quadr       3       4      13      12
+      4   1   0 Quadr       4       5      14      13
+      5   1   0 Quadr       5       6      15      14
+      6   1   0 Quadr       6       7      16      15
+      7   1   0 Quadr       7       8      17      16
+      8   1   0 Quadr       8       9      18      17
+      9   1   0 Quadr      10      11      20      19
+     10   1   0 Quadr      11      12      21      20
+     11   1   0 Quadr      12      13      22      21
+     12   1   0 Quadr      13      14      23      22
+     13   1   0 Quadr      14      15      24      23
+     14   1   0 Quadr      15      16      25      24
+     15   1   0 Quadr      16      17      26      25
+     16   1   0 Quadr      17      18      27      26
+     17   1   0 Quadr      19      20      29      28
+     18   1   0 Quadr      20      21      30      29
+     19   1   0 Quadr      21      22      31      30
+     20   1   0 Quadr      22      23      32      31
+     21   1   0 Quadr      23      24      33      32
+     22   1   0 Quadr      24      25      34      33
+     23   1   0 Quadr      25      26      35      34
+     24   1   0 Quadr      26      27      36      35
+     25   1   0 Quadr      28      29      38      37
+     26   1   0 Quadr      29      30      39      38
+     27   1   0 Quadr      30      31      40      39
+     28   1   0 Quadr      31      32      41      40
+     29   1   0 Quadr      32      33      42      41
+     30   1   0 Quadr      33      34      43      42
+     31   1   0 Quadr      34      35      44      43
+     32   1   0 Quadr      35      36      45      44
+     33   1   0 Quadr      37      38      47      46
+     34   1   0 Quadr      38      39      48      47
+     35   1   0 Quadr      39      40      49      48
+     36   1   0 Quadr      40      41      50      49
+     37   1   0 Quadr      41      42      51      50
+     38   1   0 Quadr      42      43      52      51
+     39   1   0 Quadr      43      44      53      52
+     40   1   0 Quadr      44      45      54      53
+     41   1   0 Quadr      46      47      56      55
+     42   1   0 Quadr      47      48      57      56
+     43   1   0 Quadr      48      49      58      57
+     44   1   0 Quadr      49      50      59      58
+     45   1   0 Quadr      50      51      60      59
+     46   1   0 Quadr      51      52      61      60
+     47   1   0 Quadr      52      53      62      61
+     48   1   0 Quadr      53      54      63      62
+     49   1   0 Quadr      55      56      65      64
+     50   1   0 Quadr      56      57      66      65
+
+ feap * * Simply supported square plate                                        
+
+   E l e m e n t   C o n n e c t i o n s
+
+   Elmt Mat Reg  Type  1-node  2-node  3-node  4-node
+     51   1   0 Quadr      57      58      67      66
+     52   1   0 Quadr      58      59      68      67
+     53   1   0 Quadr      59      60      69      68
+     54   1   0 Quadr      60      61      70      69
+     55   1   0 Quadr      61      62      71      70
+     56   1   0 Quadr      62      63      72      71
+     57   1   0 Quadr      64      65      74      73
+     58   1   0 Quadr      65      66      75      74
+     59   1   0 Quadr      66      67      76      75
+     60   1   0 Quadr      67      68      77      76
+     61   1   0 Quadr      68      69      78      77
+     62   1   0 Quadr      69      70      79      78
+     63   1   0 Quadr      70      71      80      79
+     64   1   0 Quadr      71      72      81      80
+
+ feap * * Simply supported square plate                                        
+
+  E d g e    N o d a l    B.C.
+
+    node  1-B.C.  2-B.C.  3-B.C.
+       1       0       1       1
+       2       0       1       0
+       3       0       1       0
+       4       0       1       0
+       5       0       1       0
+       6       0       1       0
+       7       0       1       0
+       8       0       1       0
+       9       1       1       1
+      10       0       0       1
+      18       1       1       1
+      19       0       0       1
+      27       1       1       1
+      28       0       0       1
+      36       1       1       1
+      37       0       0       1
+      45       1       1       1
+      46       0       0       1
+      54       1       1       1
+      55       0       0       1
+      63       1       1       1
+      64       0       0       1
+      72       1       1       1
+      73       1       1       1
+      74       1       1       1
+      75       1       1       1
+      76       1       1       1
+      77       1       1       1
+      78       1       1       1
+      79       1       1       1
+      80       1       1       1
+      81       1       1       1
+
+     E l e m e n t   S i z e   V a l u e s
+          h-minimum =  6.2500E-01
+          h-maximum =  8.8388E-01
+
+     E q u a t i o n / P r o b l e m   S u m m a r y:
+
+          Space dimension (ndm) =         2   Number dof (ndf) =       3
+          Number of equations   =       176   Number nodes     =      81
+          Average col. height   =        24   Number elements  =      64
+          Number profile terms  =      4189   Number materials =       1
+
+
+ feap * * Simply supported square plate                                        
+
+     Solution Commands       Variable 1  Variable 2  Variable 3
+       loop                  2.0000E+00  0.0000E+00  0.0000E+00
+       tang                  1.0000E+00  0.0000E+00  0.0000E+00
+       next                  0.0000E+00  0.0000E+00  0.0000E+00
+       plot      cont        1.0000E+00  0.0000E+00  0.0000E+00
+       disp                  1.0000E+00  0.0000E+00  0.0000E+00
+ *Command   1 * loop                v:   2.00       4.00       0.00    
+                                                           t=     0.00     0.00
+ *Command   2 * tang                v:   1.00       0.00       0.00    
+                                                           t=     0.00     0.00
+   Residual norm =     2.8320312E+00    1.0000000E+00      t=     0.54     0.00
+ Condition check: D-max 0.1162E+03; D-min 0.3650E+01; Ratio 0.3183E+02
+ Maximum no. diagonal digits lost:  1
+   End Triangular Decomposition                            t=     0.54     0.00
+   Energy convergence test
+    Maximum   =    9.630444906733273E+01 Current   =    9.630444906733273E+01
+    Relative  =    1.000000000000000E+00 Tolerance =    1.000000000000000E-16
+ *Command   3 * next                v:   1.00       2.00       1.00    
+                                                           t=     0.54     0.00
+ *Command   2 * tang                v:   1.00       0.00       0.00    
+                                                           t=     0.54     0.00
+   Residual norm =     9.3101955E-13    3.2874621E-13      t=     0.54     0.00
+ Condition check: D-max 0.1162E+03; D-min 0.3650E+01; Ratio 0.3183E+02
+ Maximum no. diagonal digits lost:  1
+   End Triangular Decomposition                            t=     0.54     0.00
+   Energy convergence test
+    Maximum   =    9.630444906733273E+01 Current   =    3.413194278147727E-25
+    Relative  =    3.544170919623184E-27 Tolerance =    1.000000000000000E-16
+ *Command   3 * next                v:   2.00       2.00       2.00    
+                                                           t=     0.54     0.00
+ *Command   4 * plot cont           v:   1.00       0.00       0.00    
+                                                           t=     0.54     0.00
+    Minimum is   0.00E+00 Maximum is   1.26E+01
+   ------ Contour Values for Plot ------
+      0.179776E+01   0.359552E+01   0.539327E+01   0.719103E+01   0.898879E+01
+      0.107865E+02
+ *Command   5 * disp                v:   1.00       0.00       0.00    
+                                                           t=     0.68     0.00
+
+ feap * * Simply supported square plate                                        
+
+  N o d a l   D i s p l a c e m e n t s     Time       0.00000E+00
+                                            Prop. Ld.  1.00000E+00
+
+   Node     1 Coord     2 Coord     1 Displ     2 Displ     3 Displ
+      1  0.0000E+00  0.0000E+00  1.2584E+01  0.0000E+00  0.0000E+00
+ *End of Solution Execution*                               t=     0.68     0.00
+
+  C o n s t a n t    V a l u e s
+
+     Constant n  =  0.16000000E+02

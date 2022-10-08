@@ -1,0 +1,163 @@
+ FEAP ** Example 1. Circular Disk: Basic inputs                                 
+
+     Solution date: Thu Jun 09 21:06:32 2022
+
+              Release 5.1.1c   
+              18 June 2020     
+
+     Input Data Filename: Iplate.txt                                                                                                                      
+
+     Number of Nodal Points  - - - - - - :       19
+     Number of Elements  - - - - - - - - :       12
+
+     Spatial Dimension of Mesh - - - - - :        2
+     Degrees-of-Freedom/Node (Maximum) - :        2
+     Equations/Element       (Maximum) - :        0
+     Number Element Nodes    (Maximum) - :        4
+
+     Number of Material Sets - - - - - - :        1
+     Number Parameters/Set   (Program) - :      300
+     Number Parameters/Set   (Users  ) - :      150
+
+ FEAP ** Example 1. Circular Disk: Basic inputs                                
+
+     Nodal Coordinates   
+
+      node    1 Coord    2 Coord
+         1  0.000E+00  0.000E+00
+         2  2.500E-01  0.000E+00
+         3  5.000E-01  0.000E+00
+         4  7.500E-01  0.000E+00
+         5  1.000E+00  0.000E+00
+         6  0.000E+00  2.500E-01
+         7  2.250E-01  2.250E-01
+         8  4.500E-01  2.000E-01
+         9  6.870E-01  2.913E-01
+        10  9.239E-01  3.827E-01
+        11  0.000E+00  5.000E-01
+        12  2.000E-01  4.500E-01
+        13  4.000E-01  4.000E-01
+        14  5.505E-01  5.505E-01
+        15  7.010E-01  7.010E-01
+        16  0.000E+00  7.500E-01
+        17  2.913E-01  6.869E-01
+        18  3.827E-01  9.239E-01
+        19  0.000E+00  1.000E+00
+
+ FEAP ** Example 1. Circular Disk: Basic inputs                                
+
+     E l e m e n t s
+
+   Elmt Mat Reg  Type  1 Node  2 Node  3 Node  4 Node
+      1   1   0  Unk?       1       2       7       6
+      2   1   0  Unk?       2       3       8       7
+      3   1   0  Unk?       3       4       9       8
+      4   1   0  Unk?       4       5      10       9
+      5   1   0  Unk?       6       7      12      11
+      6   1   0  Unk?       7       8      13      12
+      7   1   0  Unk?       8       9      14      13
+      8   1   0  Unk?       9      10      15      14
+      9   1   0  Unk?      11      12      17      16
+     10   1   0  Unk?      12      13      14      17
+     11   1   0  Unk?      14      15      18      17
+     12   1   0  Unk?      16      17      18      19
+
+ FEAP ** Example 1. Circular Disk: Basic inputs                                
+
+  N o d a l   B. C.
+
+      Node 1-b.c. 2-b.c.
+         1      1     -1
+         2      0     -1
+         3      0     -1
+         4      0     -1
+         5      0      1
+         6     -1      0
+        11     -1      0
+        16     -1      0
+        19      1      0
+
+ FEAP ** Example 1. Circular Disk: Basic inputs                                
+
+     Nodal Forces        
+
+      node    1 Force    2 Force
+        19  0.000E+00 -5.000E+00
+
+ FEAP ** Example 1. Circular Disk: Basic inputs                                
+
+   M a t e r i a l    P r o p e r t i e s
+
+     Material Number   1: Element Type: SOLId:                           
+     Degree of Freedom Assignments    Local    Global
+                                     Number    Number
+                                        1         1
+                                        2         2
+
+     T w o   D i m e n s i o n a l   S o l i d   E l e m e n t
+
+     M e c h a n i c a l   P r o p e r t i e s
+
+          Plane Stress  Analysis
+
+          Modulus E        1.00000E+04
+          Poisson ratio    0.25000
+
+          Thickness        1.00000E+00
+          Quadrature: Arrays  2
+          Quadrature: Output  2
+
+          Thickness        1.00000E+00
+          Density          7.00000E+03
+
+          1-Gravity Load   0.00000E+00
+          2-Gravity Load   0.00000E+00
+          3-Gravity Load   0.00000E+00
+
+          Formulation : Small deformation.
+          Element type: Displacement.
+          Mass type   : Consistent.
+ *WARNING* GENVEC: No data found for a -> Disp <- data set.
+
+     E l e m e n t   S i z e   V a l u e s
+          h-minimum =  2.5000E-01
+          h-maximum =  4.2765E-01
+
+     E q u a t i o n / P r o b l e m   S u m m a r y:
+
+          Space dimension (ndm) =         2   Number dof (ndf) =       2
+          Number of equations   =        28   Number nodes     =      19
+          Average col. height   =         8   Number elements  =      12
+          Number profile terms  =       218   Number materials =       1
+
+ *Command   1 * plot mesh           v:   0.00       0.00       0.00    
+                                                           t= 86399.38     0.00
+ *Command   1 * stre                v:   0.00       0.00       0.00    
+                                                           t= 86399.58     0.00
+ FEAP ** Example 1. Circular Disk: Basic inputs                                  
+
+     Element Stresses
+
+    Elmt Mat Angle   11-stress   22-stress   33-stress   12-stress    1-stress
+  1-coord  2-coord   11-strain   22-strain   33-strain   12-strain    2-stress
+       1   1  45.0   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+    0.052    0.052   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+
+       1   1  45.0   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+    0.193    0.049   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+
+       1   1  45.0   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+    0.182    0.182   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+
+       1   1  45.0   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+    0.049    0.193   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+
+ *Command   1 * plot stress         v:   0.00       0.00       0.00    
+                                                           t= 86399.77     0.00
+    Minimum is  -1.00E-08 Maximum is   1.00E-08
+   ------ Contour Values for Plot ------
+     -0.714286E-08  -0.428571E-08  -0.142857E-08   0.142857E-08   0.428571E-08
+      0.714286E-08
+ ** ERROR ** No plot - all zero values
+ *Command   1 * plot disp           v:   0.00       0.00       0.00    
+                                                           t= 86399.77     0.00

@@ -1,0 +1,44 @@
+feap * * 3-d block for thermal flux
+  0 0 0 3 1 8
+
+mate
+  thermal
+    fourier isotropic 1 1
+
+block
+  cart 5 5 5
+    brick 8
+      1 0 0 0
+      2 8 0 0
+      3 8 8 0
+      4 0 8 0
+      5 0 0 8
+      6 8 0 8
+      7 8 8 8
+      8 0 8 8
+
+eboun
+  1 0 1
+
+csurf
+  flux 1
+  surface
+    1 8 0 0 3
+    2 8 8 0 3
+    3 8 8 8 3
+    4 8 0 8 3
+
+end
+
+batch
+  loop,,2
+    tang,,1
+  next
+  disp coor 1 8
+  reac coor 1 0
+  plot pers
+  plot hide
+  plot cont 1
+end
+inter
+stop

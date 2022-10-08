@@ -1,0 +1,34 @@
+
+  --------------------------------- START OF FEAP LOG ----------------------------------
+
+  INPUT FILE NAME: Ieuler                                                                                                                          
+
+  MESH INPUT RECORDS
+  ------------------
+     parameters                     
+     noprint                        
+     coor                           
+     elem                           
+     boun                           
+     param                          
+     forc                           
+     mate            1              
+     end                            
+
+  --------------------------------- END OF MESH INPUTS ---------------------------------
+
+
+  SOLUTION SUMMARY
+  ----------------
+
+  Load    Total     Solution      Time     Residual Norm        Energy Norm     CPU Time
+  Step  Tang+Forms      Time      Incr.  Initial     Final   Initial     Final (Seconds)
+  --------------------------------------------------------------------------------------
+
+ *ERROR* SUBS: Geometric tangent has no terms.  Compute
+               solution before GEOM to get values.
+
+     0     2    0  0.000E+00  0.00E+00  1.00E+00  1.83E-15  1.00E-02  2.76E-33      0.01
+
+ Total     2    0
+  ---------------------------------- END OF FEAP LOG -----------------------------------

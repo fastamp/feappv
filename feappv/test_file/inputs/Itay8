@@ -1,0 +1,117 @@
+FEAP ** Taylor Impact test
+ 0 0 0 3 3 8
+
+mate,1
+  solid
+    elastic isotropic 110.0e9 0.3
+    start   plastic
+    plastic mises     314.0e6 0.0d0 0.0d0
+    density body      8970.0
+    finite
+    mixed
+
+parameter
+  j = 4
+  n = j
+  m = 6*n
+  a = 3.2e-03
+  b = 0.5*a
+  c = 0.4*a
+  d = a*cosd(45)
+  h = 32.4e-03
+ nn = (j+1)*(n+1)*(m+1)*3
+
+noprint
+snode
+  1 0 0 0
+  2 b 0 0
+  3 a 0 0
+  4 c c 0
+  5 d d 0
+  6 0 b 0
+  7 0 a 0
+  8 0 0 h
+  9 b 0 h
+ 10 a 0 h
+ 11 c c h
+ 12 d d h
+ 13 0 b h
+ 14 0 a h
+
+
+sides
+  polar  3  5 1
+  polar  5  7 1
+  polar 10 12 8
+  polar 12 14 8
+
+blend
+  solid n n m
+    brick 8
+      1  2  4  6  8  9 11 13
+
+blend
+  solid n j m
+    brick 8
+      3  5  4  2 10 12 11  9
+
+blend
+  solid j n m
+    brick 8
+      7  6  4  5 14 13 11 12
+
+eboun
+  1 0 1 0 0
+  2 0 0 1 0
+  3 0 0 0 1
+
+
+end
+
+tie
+
+order
+  2 2 2 0
+
+batch
+ echo on
+ noprint
+ dt,,8.0e-8
+ transient  newmark
+ init       rate
+end
+  1 1 0.0 0.0  -227.0 0.0d0
+ nn 0 0.0 0.0  -227.0 0.0d0
+
+!inter
+
+batch
+  plot defo
+  plot pers 1
+  plot hide
+  plot cylinder     ! cylindrical coordinates
+  opti
+  loop  time  100
+    time
+    loop  tan  10
+      tang,,1
+    next  tan
+    plot wipe
+    plot pers
+    plot hide
+    plot cent 0.25 0.5
+    plot cont 1
+    plot cent 0.75 0.5
+    plot cont 3
+  next  time
+  save              ! Save restart file
+end
+  0
+ 10e-02  8e-02 1e-01
+  0      0     1
+
+
+inte
+
+stop
+

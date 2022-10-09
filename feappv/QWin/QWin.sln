@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "QWin", "QWin\QWin.vfproj", "{D47249CD-FAAB-4FC5-AA98-80AAE982837E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F865118D-16B7-4F7E-8398-FFE6F1FD8426} = {F865118D-16B7-4F7E-8398-FFE6F1FD8426}
+	EndProjectSection
 EndProject
 Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "Lib22", "..\Lib22\Lib22\Lib22.vfproj", "{F865118D-16B7-4F7E-8398-FFE6F1FD8426}"
 EndProject

@@ -5,8 +5,8 @@
 		<Platform Name="x64"/></Platforms>
 	<Configurations>
 		<Configuration Name="Debug|Win32">
-				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" WarnInterfaces="true" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtQuickWinDebug"/>
-				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" GenerateDebugInformation="true" SubSystem="subSystemWindows"/>
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" AdditionalIncludeDirectories="..\..\Lib22\Lib22\include;..\..\Lib22\Lib22\include\integer4" Traceback="true" BoundsCheck="true" StackFrameCheck="true" RuntimeLibrary="rtQuickWinDebug"/>
+				<Tool Name="VFLinkerTool" OutputFile="..\..\..\..\debug\$(ProjectName).exe" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="..\..\..\..\debug" IgnoreDefaultLibraryNames="msvcrtd.lib" GenerateDebugInformation="true" SubSystem="subSystemWindows" AdditionalDependencies="Lib22.lib"/>
 				<Tool Name="VFResourceCompilerTool"/>
 				<Tool Name="VFMidlTool" SuppressStartupBanner="true"/>
 				<Tool Name="VFCustomBuildTool"/>
@@ -24,9 +24,9 @@
 				<Tool Name="VFPreBuildEventTool"/>
 				<Tool Name="VFPostBuildEventTool"/>
 				<Tool Name="VFManifestTool" SuppressStartupBanner="true"/></Configuration>
-		<Configuration Name="Debug|x64" OutputDirectory="..\">
-				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" AdditionalIncludeDirectories="E:\Coding\FEAPPV\feappv\Lib22\Lib22\include;E:\Coding\FEAPPV\feappv\Lib22\Lib22\include\integer4" RuntimeLibrary="rtQuickWinDebug"/>
-				<Tool Name="VFLinkerTool" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="E:\Coding\FEAPPV\Lib22\Lib22\x64\Debug" IgnoreDefaultLibraryNames="msvcrtd.lib" GenerateDebugInformation="true" SubSystem="subSystemWindows" AdditionalDependencies="Lib22.lib"/>
+		<Configuration Name="Debug|x64" OutputDirectory="">
+				<Tool Name="VFFortranCompilerTool" SuppressStartupBanner="true" DebugInformationFormat="debugEnabled" Optimization="optimizeDisabled" AdditionalIncludeDirectories="..\..\Lib22\Lib22\include;..\..\Lib22\Lib22\include\integer4" RuntimeLibrary="rtQuickWinDebug"/>
+				<Tool Name="VFLinkerTool" OutputFile="..\..\..\..\debug\$(ProjectName).exe" LinkIncremental="linkIncrementalNo" SuppressStartupBanner="true" AdditionalLibraryDirectories="..\..\..\..\debug" IgnoreDefaultLibraryNames="msvcrtd.lib" GenerateDebugInformation="true" SubSystem="subSystemWindows" AdditionalDependencies="Lib22.lib"/>
 				<Tool Name="VFResourceCompilerTool"/>
 				<Tool Name="VFMidlTool" SuppressStartupBanner="true" TargetEnvironment="midlTargetAMD64"/>
 				<Tool Name="VFCustomBuildTool"/>
